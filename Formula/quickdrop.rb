@@ -29,14 +29,14 @@ class Quickdrop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_linux_amd64.zip"
+      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_linux_amd64.zip"
       sha256 "6b9ce54c5e912277aab140558508c3219d9dc1e250a99feef90de7122cb770a3"
       define_method(:install) do
         bin.install "quickdrop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_linux_arm64.zip"
+      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_linux_arm64.zip"
       sha256 "a59ded5dc7e7400e9bb79de8216a8fce355b4c2277167af2fe3ca7926ce257ed"
       define_method(:install) do
         bin.install "quickdrop"
