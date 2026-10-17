@@ -5,21 +5,21 @@
 class Quickdrop < Formula
   desc "Fast and beautiful CLI tool for file transfer via QR codes"
   homepage "https://github.com/Roma595/Quickdrop"
-  version "1.1.7"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.1.7/Quickdrop_darwin_amd64.zip"
-      sha256 "00da59d817d5e75789cb27d04b1b433f6520a1cf049c4f3e87b3c9d4c1258ccc"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_darwin_amd64.zip"
+      sha256 "4e4be201a63093175be39c913cf3c9b5e3ab6766fd4ca40dc8d383dfc63aa5f1"
 
       define_method(:install) do
         bin.install "quickdrop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.1.7/Quickdrop_darwin_arm64.zip"
-      sha256 "2507d8426e21a1528fbdb4a629dcfeb92c515ff6267b4d3fa273d94921c3780b"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_darwin_arm64.zip"
+      sha256 "7799d50c725057b1cb7a78d5fbd2a34835de7d665cdc5d3c3cd79197c7189a7d"
 
       define_method(:install) do
         bin.install "quickdrop"
@@ -29,15 +29,15 @@ class Quickdrop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.1.7/Quickdrop_linux_amd64.zip"
-      sha256 "405c99527e10b5251cb70354088849bc35eb76cc7589747db6abc94d7d3c5cc1"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_linux_amd64.zip"
+      sha256 "6b9ce54c5e912277aab140558508c3219d9dc1e250a99feef90de7122cb770a3"
       define_method(:install) do
         bin.install "quickdrop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.1.7/Quickdrop_linux_arm64.zip"
-      sha256 "3b1317a6c3c325c9c85ff901f32ccb3f4e297d7cb2f371fb06f39dc9140b2676"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_linux_arm64.zip"
+      sha256 "a59ded5dc7e7400e9bb79de8216a8fce355b4c2277167af2fe3ca7926ce257ed"
       define_method(:install) do
         bin.install "quickdrop"
       end
