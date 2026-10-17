@@ -10,7 +10,7 @@ class Quickdrop < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_darwin_amd64.zip"
+      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_darwin_amd64.zip"
       sha256 "4e4be201a63093175be39c913cf3c9b5e3ab6766fd4ca40dc8d383dfc63aa5f1"
 
       define_method(:install) do
