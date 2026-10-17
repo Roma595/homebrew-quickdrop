@@ -18,7 +18,7 @@ class Quickdrop < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.0/quickdrop_darwin_arm64.zip"
+      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_darwin_arm64.zip"
       sha256 "7799d50c725057b1cb7a78d5fbd2a34835de7d665cdc5d3c3cd79197c7189a7d"
 
       define_method(:install) do
