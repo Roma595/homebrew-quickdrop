@@ -5,21 +5,21 @@
 class Quickdrop < Formula
   desc "Fast and beautiful CLI tool for file transfer via QR codes"
   homepage "https://github.com/Roma595/Quickdrop"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_darwin_amd64.zip"
-      sha256 "4e4be201a63093175be39c913cf3c9b5e3ab6766fd4ca40dc8d383dfc63aa5f1"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.1/quickdrop_darwin_amd64.zip"
+      sha256 "060ce4b57c9575c008e8c4207893f6801bd9f2d048a77e3aab5301751927f563"
 
       define_method(:install) do
         bin.install "quickdrop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_darwin_arm64.zip"
-      sha256 "7799d50c725057b1cb7a78d5fbd2a34835de7d665cdc5d3c3cd79197c7189a7d"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.1/quickdrop_darwin_arm64.zip"
+      sha256 "9d40bc71d58d650c7026982268c005cf445d88b23fb38129706da1a94e5b2baf"
 
       define_method(:install) do
         bin.install "quickdrop"
@@ -29,15 +29,15 @@ class Quickdrop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_linux_amd64.zip"
-      sha256 "6b9ce54c5e912277aab140558508c3219d9dc1e250a99feef90de7122cb770a3"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.1/quickdrop_linux_amd64.zip"
+      sha256 "1866c4840fe4b6f747f8a37fe5aeb693d2bda232b7877b891a281cbb84e3efb1"
       define_method(:install) do
         bin.install "quickdrop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Roma595/Quickdrop/releases/v1.2.0/quickdrop_linux_arm64.zip"
-      sha256 "a59ded5dc7e7400e9bb79de8216a8fce355b4c2277167af2fe3ca7926ce257ed"
+      url "https://github.com/Roma595/Quickdrop/releases/download/v1.2.1/quickdrop_linux_arm64.zip"
+      sha256 "5c9356a469773e1867fe3a61edf8104931e9826c5e3bdd5eb6350918ffdfffa3"
       define_method(:install) do
         bin.install "quickdrop"
       end
